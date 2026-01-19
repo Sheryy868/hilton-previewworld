@@ -1,0 +1,87 @@
+# CodeIgniter 4
+/writable/cache/*
+/writable/logs/*
+/writable/session/*
+/writable/uploads/*
+/writable/debugbar/*
+!writable/cache/.gitkeep
+!writable/logs/.gitkeep
+!writable/session/.gitkeep
+!writable/uploads/.gitkeep
+!writable/debugbar/.gitkeep
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Uploads directory (user-generated content)
+/uploads/*
+!/uploads/.gitkeep
+/uploads_old_2.5.1/*
+
+# Error logs
+error_log
+*.log
+
+# Vendor directories
+/vendor/
+/api/vendor/
+/app/ThirdParty/*/vendor/
+/London viator/app/ThirdParty/*/vendor/
+
+# Composer
+composer.phar
+composer.lock
+
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Archive files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Build files
+/build/
+/dist/
+
+# PWA files (if generated)
+# Uncomment if these are generated files
+# /pwa-sw.js
+
+# Windows specific
+Web.config.local
+
+# PHP specific
+*.php~
+*.php.bak
+
+/cursor_assets
