@@ -11,8 +11,6 @@
 !writable/debugbar/.gitkeep
 
 # Environment files
-.env
-.env.*
 !.env.example
 
 # Uploads directory (user-generated content)
@@ -40,7 +38,6 @@ npm-debug.log
 yarn-error.log
 
 # IDE and Editor files
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -85,3 +82,4 @@ Web.config.local
 *.php.bak
 
 /cursor_assets
+config.bat

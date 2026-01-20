@@ -606,10 +606,6 @@ $(window).on('load', function () {
     $(".show-on-page-load").css("visibility", "visible")
 });
 
-//full screen
-$(document).ready(function () {
-    $("iframe").attr("allowfullscreen", "")
-});
 //custom scrollbar
 var custom_scrollbar = $('.custom-scrollbar');
 if (custom_scrollbar.length) {
