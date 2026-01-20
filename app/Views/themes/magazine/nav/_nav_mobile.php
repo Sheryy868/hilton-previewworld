@@ -14,6 +14,11 @@
 <img src="<?= $darkMode == 1 ? getLogoFooter() : getLogo(); ?>" alt="logo" class="logo" width="<?= getLogoSize('width'); ?>" height="<?= getLogoSize('height'); ?>">
 </a>
 </div>
+<div class="mobile-chat">
+<a href="<?= langBaseUrl('page-no-title'); ?>" class="btn-chat-mobile" title="AI Assistant" aria-label="Chat">
+<img src="<?= base_url('uploads/logo/chat-ai.jpg'); ?>" alt="AI Assistant" class="chat-icon-img">
+</a>
+</div>
 <div class="mobile-search">
 <button type="button" class="menu-button mobile-search-button" aria-label="search">
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

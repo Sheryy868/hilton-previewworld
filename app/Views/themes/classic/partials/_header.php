@@ -100,6 +100,11 @@ if ($generalSettings->pwa_status == 1): ?>
 <img src="<?= $darkMode == 1 ? getLogoFooter() : getLogo(); ?>" alt="logo" class="logo" width="<?= getLogoSize('width'); ?>" height="<?= getLogoSize('height'); ?>">
 </a>
 </div>
+<div class="mobile-chat">
+<a href="<?= langBaseUrl('page-no-title'); ?>" class="btn-chat-mobile" title="AI Assistant" aria-label="Chat">
+<img src="<?= base_url('uploads/logo/chat-ai.jpg'); ?>" alt="AI Assistant" class="chat-icon-img">
+</a>
+</div>
 <div class="mobile-search">
 <a class="search-icon"><i class="icon-search"></i></a>
 </div>

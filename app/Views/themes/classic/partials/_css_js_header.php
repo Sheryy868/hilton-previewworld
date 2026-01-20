@@ -8,5 +8,110 @@ echo '.bn-ds-'.$item->id. '{width: ' . $item->desktop_width . 'px; height: ' . $
 echo '.bn-mb-'.$item->id. '{width: ' . $item->mobile_width . 'px; height: ' . $item->mobile_height . 'px;}';
 endif;
 endforeach;
-endif; ?>.modal-newsletter .image {background-image: url('<?= getNewsletterImage();?>');}</style>
+endif; ?>.modal-newsletter .image {background-image: url('<?= getNewsletterImage();?>');}
+/* Mobile Header Logo Centering */
+.nav-mobile-header-container {
+    position: relative;
+    display: table;
+    width: 100%;
+}
+.nav-mobile-header-container .menu-icon {
+    display: table-cell;
+    vertical-align: middle;
+    width: 52px;
+    min-width: 52px;
+}
+.nav-mobile-header-container .mobile-logo {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: auto !important;
+    max-width: calc(50% - 60px) !important;
+    height: 52px;
+    z-index: 1 !important;
+    pointer-events: none;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.nav-mobile-header-container .mobile-logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    max-width: 100%;
+}
+.nav-mobile-header-container .mobile-logo img {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto;
+    max-height: 52px;
+    display: block;
+}
+/* Mobile Chat Button Styles - Position on right side, before search */
+.nav-mobile-header-container .mobile-chat {
+    display: table-cell !important;
+    vertical-align: middle;
+    text-align: center;
+    width: 52px !important;
+    min-width: 52px !important;
+    max-width: 52px !important;
+    height: 52px;
+    padding: 0 5px;
+    position: relative !important;
+    z-index: 10 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+.nav-mobile-header-container .mobile-search {
+    display: table-cell !important;
+    vertical-align: middle;
+    text-align: center;
+    width: 52px !important;
+    min-width: 52px !important;
+    max-width: 52px !important;
+    height: 52px;
+    position: relative !important;
+    z-index: 10 !important;
+    padding: 0 !important;
+}
+.nav-mobile-header-container .mobile-chat .btn-chat-mobile {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    overflow: hidden;
+    border: none;
+}
+.nav-mobile-header-container .mobile-chat .btn-chat-mobile .chat-icon-img {
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block !important;
+    flex-shrink: 0;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+.nav-mobile-header-container .mobile-chat .btn-chat-mobile:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+.dark-mode .nav-mobile-header-container .mobile-chat .btn-chat-mobile {
+    background-color: transparent;
+}
+.dark-mode .nav-mobile-header-container .mobile-chat .btn-chat-mobile:hover {
+    opacity: 0.9;
+}
+</style>
 <script>var VrConfig = {baseURL: '<?= base_url(); ?>', csrfTokenName: '<?= csrf_token() ?>', authCheck: <?= authCheck() ? 1 : 0; ?>, sysLangId: '<?= $activeLang->id; ?>', isRecaptchaEnabled: '<?= isRecaptchaEnabled($generalSettings) ? 1 : 0; ?>', rtl: <?= $rtl ? 'true' : 'false'; ?>, textOk: "<?= clrQuotes(trans("ok")); ?>", textYes: "<?= clrQuotes(trans("yes")); ?>", textCancel: "<?= clrQuotes(trans("cancel")); ?>", textCorrectAnswer : "<?= clrQuotes(trans("correct_answer")); ?>", textWrongAnswer : "<?= clrQuotes(trans("wrong_answer")); ?>"};</script>
